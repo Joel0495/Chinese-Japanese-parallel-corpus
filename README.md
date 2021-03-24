@@ -4,10 +4,10 @@
 文件格式：*.zh 和 \*.ja，可直接读取
 
 
-processed.zip: 过筛
+processed.zip: 过筛 \n
 un.zip: 未过筛
 
-ja-zhcleaner.py
+ja-zhcleaner.py (加入并行处理库)
 筛选方法：
 常用汉字筛选 / 
 数字、字母、符号占比筛选 / 
