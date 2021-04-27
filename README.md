@@ -13,7 +13,33 @@ un.zip: 未过筛
 CJKC.json：中日汉字对照表
 
 ja-zhcleaner.py (加入multiprocessing并行处理库)  
- 
+
+&emsp;--file_type, default="single")  #双语文件模式/两个单文件模式
+  
+&emsp;--file_path, default=None) #双语文件路径或单文件的日语文件路径
+  
+&emsp;--file_path2, default=None) #单文件的中文文件路径
+  
+&emsp;--output_1, default='./filted.jazh') #输出文件路径1(筛选过)
+  
+&emsp;--output_2, default='./unclean.jazh') #输出文件路径2(被筛选掉的)
+  
+&emsp;--pool", default=8) #并行池数
+  
+&emsp;--mappingtable_path, default="./kanji_mapping_table.txt") #汉字对照表路径
+
+&emsp;--commonhanzi_path, default="./3500common_hanzi_table.txt") #3500常用汉字（中文）表
+  
+&emsp;--sn_ratio, default=0.5) #数字符号字母量筛选比例
+  
+&emsp;--bl_ratio, default=0.5) #中日文长度筛选比例
+  
+&emsp;--ratio_zh, default=0.1) #共通汉字占中文长度筛选比例
+  
+&emsp;--ratio_jp, default=0.3) #共通汉字占日语长度筛选比例
+  
+&emsp;--ratio_gap, default=0.25) #实词占比筛选比例
+
 <br/>
 
 筛选方法：
