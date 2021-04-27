@@ -1,15 +1,20 @@
 # Chinese-Japanese-parallel-corpus
-更新中，某网站爬取的中日翻译语句对，方便使用按50音做了整合，仅对齐未清洗未分词
 
-文件格式：*.zh 和 \*.ja，可直接读取
+weblio爬取的中日翻译语句对，方便使用按50音做了整合，仅对齐未清洗未分词
 
+<br/>
+
+文件格式：*.zh 和 \*.ja，可直接读取  
 
 processed.zip: 过筛
 
 un.zip: 未过筛
 
-ja-zhcleaner.py (加入并行处理库)
+CJKC.json：中日汉字对照表
 
+ja-zhcleaner.py (加入multiprocessing并行处理库)  
+ 
+<br/>
 
 筛选方法：
 常用汉字筛选 / 
@@ -29,4 +34,3 @@ ja-zhcleaner.py (加入并行处理库)
 简易1-gram常用汉字转换后重叠比例筛选 / 
 
 实词占比差筛选(jieba:中文分词, nagisa: 日语分词)
-
