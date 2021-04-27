@@ -8,7 +8,7 @@ processed.zip: 过筛
 
 un.zip: 未过筛
 
-ja-zhcleaner.py (加入并行处理库)
+ja-zhcleaner.py (加入并行处理库) \n
 
 筛选方法：
 常用汉字筛选 / 
